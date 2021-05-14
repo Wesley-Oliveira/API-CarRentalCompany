@@ -30,6 +30,7 @@ class ImportCategoryUseCase {
                     });
                 })
                 .on("end", () => {
+                    fs.promises.unlink(file.path); // para remover o arquivo após o uso, já que não vai ser necessário salvar em um bucket
                     resolve(categories);
                 })
                 .on("error", (err) => {
