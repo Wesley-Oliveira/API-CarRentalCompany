@@ -94,7 +94,7 @@ export default {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  // preset: "ts-jest",
+  preset: "ts-jest",
 
   // Run tests from one or more projects
   // projects: undefined,
