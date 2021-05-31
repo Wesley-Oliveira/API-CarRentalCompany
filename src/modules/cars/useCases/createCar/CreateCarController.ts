@@ -27,7 +27,7 @@ class CreateCarController {
             category_id,
         });
 
-        return response.json(201).json(car);
+        return response.status(201).json(car);
     }
 }
 
