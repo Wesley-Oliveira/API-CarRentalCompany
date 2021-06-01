@@ -20,7 +20,7 @@ class CarsRepository implements ICarsRepository {
         license_plate,
         name,
         specifications,
-        id, // com o id aqui fica undefined
+        id,
     }: ICreateCarDTO): Promise<Car> {
         const car = this.repository.create({
             brand,
