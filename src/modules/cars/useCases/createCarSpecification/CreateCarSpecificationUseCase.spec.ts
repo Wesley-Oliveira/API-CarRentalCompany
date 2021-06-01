@@ -54,9 +54,7 @@ describe("Create Car Specification", () => {
             specifications_id,
         });
 
-        // treta aqui, o id de carro está como undefined
-        // consequentemente na aula "Finalizando CreateCarSpecificationUseCase"
-        // No teste de tamanho de array dá erro, pq está vazio
-        console.log(specificationsCars);
+        expect(specificationsCars).toHaveProperty("specifications");
+        expect(specificationsCars.specifications.length).toBe(1);
     });
 });

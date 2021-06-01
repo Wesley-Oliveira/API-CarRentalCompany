@@ -11,10 +11,10 @@ class CarsRepositoryInMemory implements ICarsRepository {
         category_id,
         daily_rate,
         description,
-        name,
-        license_plate,
         fine_amount,
-        id,
+        license_plate,
+        name,
+        id, // com o id aqui fica undefined
     }: ICreateCarDTO): Promise<Car> {
         const car = new Car();
 
@@ -24,8 +24,8 @@ class CarsRepositoryInMemory implements ICarsRepository {
             daily_rate,
             description,
             fine_amount,
-            name,
             license_plate,
+            name,
             id,
         });
 
