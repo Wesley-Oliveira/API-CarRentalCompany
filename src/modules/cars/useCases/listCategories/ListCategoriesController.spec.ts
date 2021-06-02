@@ -37,8 +37,8 @@ describe("Create Category Controller", () => {
         await request(app)
             .post("/categories")
             .send({
-                name: "Category Supertestzão",
-                description: "Category Supertestzão",
+                name: "Category Supertestzin",
+                description: "Category Supertestzin",
             })
             .set({
                 Authorization: `Bearer ${token}`,
@@ -49,6 +49,6 @@ describe("Create Category Controller", () => {
         expect(response.status).toBe(200);
         expect(response.body.length).toBe(1);
         expect(response.body[0]).toHaveProperty("id");
-        expect(response.body[0].name).toEqual("Category Supertestzão");
+        expect(response.body[0].name).toEqual("Category Supertestzin");
     });
 });
