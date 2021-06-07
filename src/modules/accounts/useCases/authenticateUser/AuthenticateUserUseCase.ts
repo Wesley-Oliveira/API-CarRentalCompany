@@ -65,6 +65,7 @@ class AuthenticateUserUseCase {
         const refresh_token_expires_date = this.dayjsDateProvider.addDays(
             expires_refresh_token_days
         );
+
         await this.usersTokensRepository.create({
             user_id: user.id,
             refresh_token,
