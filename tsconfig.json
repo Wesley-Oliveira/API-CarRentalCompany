@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "allowJs": true,
     "rootDir": "./",
     "outDir": "./dist",
     "baseUrl": "./src",
@@ -11,7 +12,6 @@
         "@shared/*": ["shared/*"],
         "@errors/*": ["errors/*"],
         "@utils/*": ["utils/*"],
-        "@middlewares/*": ["utils/*"]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,

@@ -13,8 +13,8 @@ module.exports = {
                     "@shared": "./src/shared",
                     "@errors": "./src/errors",
                     "@utils": "./src/utils",
-                }
-            }
+                },
+            },
         ],
         "babel-plugin-transform-typescript-metadata",
         ["@babel/plugin-proposal-decorators", { legacy: true }],

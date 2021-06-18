@@ -5,8 +5,8 @@
     "username": "docker",
     "password": "ignite",
     "database": "carrentalcompany",
-    "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
-    "entities": ["./src/modules/**/entities/*.ts"],
+    "migrations": ["./src/shared/infra/typeorm/migrations/*.{js,ts}"],
+    "entities": ["./src/modules/**/entities/*.{js,ts}"],
     "cli": {
     "migrationsDir": "./src/shared/infra/typeorm/migrations"
     }
