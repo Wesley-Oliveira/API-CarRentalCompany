@@ -41,8 +41,8 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script:
-            cd ~/app/API-CarRentalCompany
-            yarn
-            yarn typeorm migration:run
+            cd ~/app/API-CarRentalCompany &&
+            yarn &&
+            yarn typeorm migration:run &&
             pm2 restart carrentalcompany_api
             
