@@ -88,3 +88,7 @@ O usuário deve estar logado na aplicação
 **RN**
 - O usuário precisa informar uma nova senha
 - O link enviado para a recuperação deve expirar em 3 horas
+
+
+**Teste Local**
+- Ao testar localmente é importante alterar as configurações no ormconfig.json. Onde houver "dist" substituir por "src"
